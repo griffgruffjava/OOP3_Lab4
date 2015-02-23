@@ -1,0 +1,57 @@
+Lab 4
+
+1a.  How an Interface differs from a concrete class:
+     A class that ‘implements’ the interface must implement all of the methods of the interface
+	 It is similar to a class, but there are differences:
+ 	 All methods in an interface type are abstract: 
+	 They have a name, parameters, and a return type, but they don’t have an implementation
+	 All methods in an interface type are automatically public
+	 An interface type cannot have instance variables
+	 An interface type cannot have static methods
+	 
+1b.  Multiple interface inheritance means that a class can implement more than one interface.
+     ie. public class Example implements ThisInterface, ThatInterface{
+     
+1c.  A class can only extend one abstract class but can implement many interfaces
+     Intefaces have only headers, no code. Abstract class can have fully written methods.
+     Abstract methods can have accessor and mutator methods, not so for interfaces.
+     Interfaces are used to define the peripheral abilities of a class.An abstract class defines 
+      the core identity of a class and there it is used for objects of the same type.  
+      
+      
+2i)  No. It is not possible to declare a private attribute that is not final static.
+
+ii)  it did not work. Because an interface can only have final attributes so there for must be intailized. When set to 'test'
+     it will work.
+     
+iii) It is not possible to make an interface final. 
+
+iv)  Nothing in an interface can be made private. 
+
+v)   abstract methods cannot contain a body.
+
+4i)  You must use use all methods from a class you implement from. Otherwise you will get a compile error
+
+ii)	 You can not change the scope of an interface method or else you will get a compile error    
+      
+      
+5i)	 Circle is a derived class. Shape is the base class
+
+ii)	 You can use setPoint(a,b) because the methods of Point are public and available to those classes which extend it. You can not use x=a 
+	 because although circle extends point, those attributes are private. Should you make those public than you could call them in circle.
+
+iii) when using super in a subclasses constructor you must use it in the first line or you will get a compile error.
+ 	 It is also used in the toString() method to call the point toString()
+
+
+6i)	 Shape shapes[] = new Shape[2]; This declares an array of 2 Shapes. Although Shape cannot be instantiated, an array that holds Shape objects
+
+ii)	 We can see polymorphic behaviour in the enhanced for loop. Both the toString() and area() methods
+	 are overloaded methods. Depending on which Shape object is being passed to the method determines what	
+	 version of the method is called. 	 
+	 
+iii) The array is for Shapes, what shapes are not known when the array is made. This uses DMB when the object are individualy 
+ 	 made.	 
+	      
+	 
+     
